@@ -14,7 +14,7 @@ end
 def get_japanese_emoticon(file_path, eng_emoticon)
   translations = load_library(file_path)
   if new_translations["get_emoticon"].keys.include?(eng_emoticon)
-
+    return new_translations["get_emoticon"][eng_emoticon]
   else
     puts "Sorry, that emoticon was not found."
   end
