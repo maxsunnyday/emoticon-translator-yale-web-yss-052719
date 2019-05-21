@@ -3,10 +3,10 @@ require "yaml"
 require "pry"
 def load_library(file_path)
   translations = YAML::load_file("#{file_path}")
-  new_translations = {get_meaning: {}, get_emoticon: {}}
+  new_translations = {"get_meaning" => {}, "get_emoticon" => {}}
   translations.each do |meaning, array|
-    new_translations[:get_meaning][array[1]] = meaning
-    new_translations[:get_emoticon][array[0]] = array[1]
+    new_translations["get_meaning"][array[1]] = meaning
+    new_translations["get_emoticon"][array[0]] = array[1]
   end
   new_translations
 end
