@@ -3,9 +3,8 @@ require "yaml"
 require "pry"
 def load_library(file_path)
   translations = YAML::load_file("#{file_path}")
-  puts translations
   translations.each do |meaning, array|
-
+    
   end
 end
 
