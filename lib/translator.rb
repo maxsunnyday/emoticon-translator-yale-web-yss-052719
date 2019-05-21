@@ -11,10 +11,10 @@ def load_library(file_path)
   new_translations
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file_path, jap_emoticon)
+  translations = load_library(file_path)
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(file_path, eng_emoticon)
+  translations = load_library(file_path)
 end
