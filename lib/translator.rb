@@ -22,4 +22,9 @@ end
 
 def get_english_meaning(file_path, jap_emoticon)
   translation = load_library(file_path)
+  if translation["get_meaning"].keys.include?(jap_emoticon)
+    return translation["get_meaning"][jap_emoticon]
+  else
+    return "Sorry, that emoticon was not found"
+  end
 end
