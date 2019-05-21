@@ -3,7 +3,6 @@ require "yaml"
 require "pry"
 def load_library(file_path)
   translations = YAML::load_file("#{file_path}")
-  puts translations
 end
 
 def get_japanese_emoticon
